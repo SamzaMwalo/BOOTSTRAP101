@@ -72,16 +72,21 @@
       body > .class {
         display: flex;
       }
+
+      body > .cards > .card {
+        background-color: aqua;
+        width: 75px;
+      }
     </style>
   </head>
   <body>
     <!-- home section -->
     <section class="container d-flex">
-      <div class="w-50 m-5">
+      <div class="w-50 m-2">
         <img src="assets/images/smartlogo.jpg" alt="image of logo" />
-        <h2 class="fs-5 fw-bold mb-2 mt-5 lh-lg">
+        <h1 class="fs-1 fw-bold mb-2 mt-5 lh-base">
           Where knowledge in technology is highly recognised
-        </h2>
+        </h1>
         <p class="fw-light mb-5 lh-base">
           Smart Tech Solutions helps people have a diverse knowledge in the
           rapid technological advancements
@@ -89,10 +94,10 @@
 
         <!-- Full stack web -->
         <div
-          class="firstCard w-100 ms-3 py-5 px-5 mb-2 border border-0 rounded-4 text-white my-4"
+          class="firstCard w-100 py-5 px-5 mb-2 border border-0 rounded-4 text-white my-4"
         >
           <div class="card-body d-flex">
-            <h5 class="fw-bold w-75 lh-base">
+            <h5 class="fw-bold lh-base">
               Smart Tech Solutions Full stack development project
             </h5>
             <h6 class="fw-light m-auto">Learn More</h6>
@@ -101,10 +106,10 @@
 
         <!-- Practising English-->
         <div
-          class="secondCard w-100 ms-3 py-5 px-5 border border-0 rounded-4 text-white"
+          class="secondCard w-100 py-5 px-5 border border-0 rounded-4 text-white"
         >
           <div class="card-body d-flex">
-            <h5 class="fw-bold w-75 lh-base">
+            <h5 class="fw-bold lh-base">
               Practice doing crazy projects with smart people like you
             </h5>
             <h6 class="fw-light m-auto">Learn More</h6>
@@ -116,18 +121,77 @@
         <img
           src="assets/images/robotech.webp"
           alt=""
-          width="340"
-          height="390"
-          class="object-fit-cover w-75 h-100 rounded-5 m-5"
+          width="450"
+          height="690"
+          class="object-fit-cover rounded-5 m-5"
         />
       </div>
     </section>
-    <br /><br /><br /><br /><br />
+    <br /><br /><br /><br />
     <hr />
-    <br />
 
-    <marquee behavior="" direction="">Stanford Health Care</marquee><br />
-    <br />
+    <div class="d-flex">
+      <div class="px-3 mx-5">
+        <h6>Trusted by</h6>
+      </div>
+      <marquee
+        behavior="scroll"
+        direction="left"
+        scrollamount="6"
+        loop="infinite"
+      >
+        <img
+          src="assets/images/m1.png"
+          alt="Description 1"
+          style="height: 100px; margin-right: 10px"
+        />
+        <img
+          src="assets/images/m2.jpeg"
+          alt="Description 2"
+          style="height: 100px; margin-right: 10px"
+        />
+        <img
+          src="assets/images/m3.webp"
+          alt="Description 3"
+          style="height: 100px; margin-right: 10px"
+        />
+        <img
+          src="assets/images/m4.jpeg"
+          alt="Description 3"
+          style="height: 100px; margin-right: 10px"
+        />
+        <img
+          src="assets/images/m5.webp"
+          alt="Description 3"
+          style="height: 100px; margin-right: 10px"
+        />
+        <img
+          src="assets/images/m6.png"
+          alt="Description 3"
+          style="height: 100px; margin-right: 10px"
+        />
+        <img
+          src="assets/images/m7.jpeg"
+          alt="Description 3"
+          style="height: 100px; margin-right: 10px"
+        />
+        <img
+          src="assets/images/m8.png"
+          alt="Description 3"
+          style="height: 100px; margin-right: 10px"
+        />
+        <img
+          src="assets/images/m9.webp"
+          alt="Description 3"
+          style="height: 100px; margin-right: 10px"
+        />
+        <img
+          src="assets/images/m10.png"
+          alt="Description 3"
+          style="height: 100px; margin-right: 10px"
+        />
+      </marquee>
+    </div>
 
     <hr />
 
@@ -140,7 +204,7 @@
     </div>
 
     <!-- A section -->
-    <section class="bg-primary display-flex rounded-4 m-auto mx-4 my-4">
+    <section class="bg-primary d-flex rounded-4 m-auto mx-4 my-4">
       <div>
         <div class="text-center">
           <img src="assets/images/leap.png" alt="" />
@@ -160,7 +224,7 @@
               nature and fluent.
             </p>
             <br /><br /><br />
-            <button type="button" class="bg-warning rounded-5">
+            <button type="button" class="bg-warning rounded-4 p-3 px-4 fw-bold">
               Learn More
             </button>
           </div>
@@ -184,14 +248,17 @@
           </div>
 
           <div class="w-50 text-start py-3 px-5">
-            <h1>Microverse's Full-Stack Web Development Program</h1>
-            <p>
+            <h2 class="fs-2">
+              Microverse's Full-Stack <br />
+              Web Development Program
+            </h2>
+            <p class="pe-5 me-5">
               Become a remote software engineer, from anywhere. We're currently
               making changes to our Full-Stack Web Development Program, so new
               enrollments are paused.
             </p>
             <br /><br /><br />
-            <button type="button" class="bg-warning rounded-5">
+            <button type="button" class="bg-warning rounded-4 p-3 px-4 fw-bold">
               Learn More
             </button>
           </div>
@@ -199,69 +266,128 @@
       </div>
       <br /><br />
     </section>
-    <br><br><br><br>
+    <br /><br /><br /><br />
 
     <div class="heading">
-      <h1 class="text-center">We’ve helped thousands of developers start international careers</h1>
+      <h2 class="text-center" style="color: black;">
+        We’ve helped thousands of developers start international careers
+      </h2>
     </div>
-    <br><br>
+    <br /><br />
 
-    <section class="cards d-flex justify-content-between">
+    <!-- cards section -->
 
+    <section class="cards conatiner d-flex justify-content-center">
       <!-- Card One -->
-      <div class="card w-25 p-auto bg-secondary">
+      <div
+        class="card conatiner w-25 py-5 px-2 mx-3 rounded-5"
+        style="background-color: antiquewhite"
+      >
         <nav class="d-flex">
           <div>
-           <img src="assets/images/1.webp" class="rounded-circle" alt="a picture of S.K Mwangi">
+            <img
+              src="assets/images/1.webp"
+              class="rounded-circle"
+              alt="a picture of S.K Mwangi"
+            />
           </div>
           <div>
-           <h6>S.K Mwangi</h6>
-           <p>Senior Software Developer at Microsoft</p>
+            <h6 class="fw-bold">S.K Mwangi</h6>
+            <p>Senior Software Developer at Microsoft</p>
           </div>
           <div>
-           <p>Kenya</p>
+            <p>Kenya</p>
           </div>
         </nav>
-        <p>"For me, it was a no-brainer. I wanted to try Microverse because while the alternatives would give you a tutorial or a cuorse, you have to do it alone, but with this, I had the accountability."</p>
+        <p class="fs-5">
+          "For me, it was a no-brainer. I wanted to try Microverse because while
+          the alternatives would give you a tutorial or a cuorse, you have to do
+          it alone, but with this, I had the accountability."
+        </p>
       </div>
 
       <!-- Card Two -->
-       <div class="card w-25 bg-secondary">
-        <nav class="d-flex">
+      <div
+        class="card conatiner w-25 py-5 px-2 mx-3 rounded-5"
+        style="background-color: rgb(180, 248, 248)"
+      >
+        <nav class="d-flex w-100">
           <div>
-           <img src="assets/images/2.webp" class="rounded-circle" alt="a picture of Gabriela C">
+            <img
+              src="assets/images/2.webp"
+              class="rounded-circle"
+              alt="a picture of Gabriela C"
+            />
           </div>
           <div>
-           <h6>Gabriela C</h6>
-           <p>Frontend Developer at Upstart 13</p>
+            <h6 class="fw-bold">Gabriela C</h6>
+            <p>Frontend Developer at Upstart 13</p>
           </div>
           <div>
-           <p>Mexico</p>
+            <p>Mexico</p>
           </div>
         </nav>
-        <p>"My life has changed 100% since Microverse. My current salary is 5.6 times more per year than my previous salary."</p>
+        <p class="fs-5">
+          "My life has changed 100% since Microverse. My current salary is 5.6
+          times more per year than my previous salary."
+        </p>
       </div>
 
       <!-- Card Three -->
-       <div class="card w-25 bg-secondary">
+      <div
+        class="card conatiner w-25 py-5 px-2 mx-3 rounded-5"
+        style="background-color: rgb(250, 249, 249)"
+      >
         <nav class="d-flex">
           <div>
-           <img src="assets/images/3.png" class="rounded-circle" alt="a picture of Luis F">
+            <img
+              src="assets/images/3.png"
+              class="rounded-circle"
+              alt="a picture of Luis F"
+            />
           </div>
           <div>
-           <h6>Luis F</h6>
-           <p>Full-Stack Developr</p>
+            <h6 class="fw-bold">Luis F</h6>
+            <p>Full-Stack Developr</p>
           </div>
           <div>
-           <p>Ecuador</p>
+            <p>Ecuador</p>
           </div>
         </nav>
-        <p>"It's been an incredible journey! Leap helped me lose my fear to make mistakes when speak English with other people. The personalised feedback helped me progress much faster"</p>
+        <p class="fs-5">
+          "It's been an incredible journey! Leap helped me lose my fear to make
+          mistakes when speak English with other people. The personalised
+          feedback helped me progress much faster"
+        </p>
       </div>
-
-       <!-- The end of cards -->
     </section>
-    <br class="Invisible-gap">
+
+    <!-- The end of cards -->
+
+    <br class="Invisible-gap" />
+
+    <!-- last section -->
+    <section style="background-color: rgb(79, 79, 157)" class="m-0">
+      <br class="Invisible-gap" />
+      <br />
+      <div class="text-center">
+        <img src="assets/images/m-verse.png" alt="" />
+      </div>
+      <br />
+      <nav class="d-flex text-center justify-content-center">
+        <a href="#" class="text-decoration-none mx-3 text-white">About</a>
+        <a href="#" class="text-decoration-none mx-3 text-white">Blog</a>
+        <a href="#" class="text-decoration-none mx-3 text-white">FAQs</a>
+      </nav>
+      <br />
+      <div>
+        <p class="text-center text-white" style="margin: 0">
+          © 2026 Microverse Enterprises, Inc. All rights reserved.
+        </p>
+      </div>
+      <br class="Invisible-gap" />
+      <br /><br />
+    </section>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
